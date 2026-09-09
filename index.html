@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北纬三十度文明探索之旅 · 2026成都 | 官方网站</title>
+<meta name="description" content="从四大古文明，到星际未来。2026年12月11—17日，成都·中国西部国际博览城9号馆，文明穹顶巨型球幕、星骸坠落陨石外星人、未来之境数字艺术、12城市厅、200余非遗科技展位，统一99元一票通玩。">
+<style>
+:root{
+  --ink:#0E0B07; --ink2:#171208; --ink3:#221B0F;
+  --bronze:#B08A4E; --bronze2:#CBA86E; --gold:#E8D6AE; --goldlt:#F6ECD2;
+  --paper:#FAF6EE; --sand:#F1E8D6; --line:#E0D3B8;
+  --text:#2B251B; --muted:#837866; --cinnabar:#A43A2B;
+  --teal:#2E6E63;
+  --serif:"Songti SC","STSong","SimSun",serif;
+  --sans:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+img,svg{display:block}
+.kicker{font-size:13px;letter-spacing:6px;color:var(--bronze);font-weight:700;text-transform:uppercase}
+h2.sec-title{font-family:var(--serif);font-size:clamp(28px,3.4vw,44px);color:var(--ink);letter-spacing:2px;margin:14px 0 12px;font-weight:700}
+.sec-sub{color:var(--muted);font-size:15.5px;max-width:780px}
+.sec-head{margin-bottom:48px}
+.sec-head .bar{width:54px;height:3px;background:linear-gradient(90deg,var(--bronze),var(--bronze2));margin-bottom:18px}
+section{padding:100px 0;position:relative}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:.4s;padding:20px 0}
+nav.solid{background:rgba(14,11,7,.94);backdrop-filter:blur(12px);padding:12px 0;border-bottom:1px solid rgba(176,138,78,.25)}
+.nav-in{max-width:1280px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;color:var(--gold);font-family:var(--serif);font-size:19px;letter-spacing:2px;font-weight:700}
+.logo .mk{width:34px;height:34px;border:1.5px solid var(--bronze);border-radius:50%;display:grid;place-items:center;font-size:14px;color:var(--bronze2)}
+.logo .logo-img{height:42px;width:auto;border-radius:6px;border:1px solid rgba(176,138,78,.4);box-shadow:0 0 18px -6px rgba(203,168,110,.6)}
+.nav-links{display:flex;gap:26px;font-size:14px;color:#D8C9A8}
+.nav-links a{padding:4px 0;transition:.3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{border:1px solid var(--bronze);color:var(--gold);padding:8px 20px;border-radius:2px;font-size:13px;letter-spacing:2px;transition:.3s}
+.nav-cta:hover{background:var(--bronze);color:var(--ink)}
+@media(max-width:960px){.nav-links{display:none}}
+
+/* HERO */
+.hero{min-height:100vh;background:radial-gradient(130% 100% at 70% 0%,#2E2513 0%,#171208 45%,#080604 100%);color:var(--gold);display:flex;align-items:center;padding:130px 0 90px;position:relative;overflow:hidden}
+#stars{position:absolute;inset:0;pointer-events:none}
+.hero-glow{position:absolute;width:760px;height:760px;right:-160px;top:50%;transform:translateY(-50%);background:radial-gradient(circle,rgba(203,168,110,.22),transparent 62%);pointer-events:none}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;width:100%}
+.hero .kicker{color:var(--bronze2)}
+.era-badge{display:inline-flex;align-items:center;gap:10px;margin:18px 0 0;font-size:13.5px;letter-spacing:3px;color:var(--goldlt);border:1px solid rgba(203,168,110,.4);border-radius:40px;padding:8px 18px;background:rgba(203,168,110,.08)}
+.era-badge b{color:var(--bronze2);font-weight:700}
+.era-badge .ar{color:var(--bronze)}
+.hero h1{font-family:var(--serif);font-size:clamp(40px,5.6vw,72px);line-height:1.18;letter-spacing:4px;margin:20px 0 20px;color:#F6ECD2;font-weight:700}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--goldlt),var(--bronze2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:16.5px;color:#C9BA98;max-width:540px;margin-bottom:30px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px 26px;margin-bottom:36px;font-size:14px;color:#D8C9A8}
+.hero-meta b{color:var(--gold);font-weight:700}
+.hero-meta .it{display:flex;gap:9px;align-items:flex-start}
+.hero-meta .dot{width:6px;height:6px;background:var(--bronze);border-radius:50%;margin-top:9px;flex:none}
+.btn-row{display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 36px;font-size:15px;letter-spacing:3px;cursor:pointer;transition:.35s;border-radius:2px}
+.btn-gold{background:linear-gradient(135deg,var(--bronze2),var(--bronze));color:var(--ink);font-weight:700;border:1px solid var(--bronze2)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 34px -10px rgba(176,138,78,.65)}
+.btn-ghost{border:1px solid rgba(232,214,174,.5);color:var(--gold)}
+.btn-ghost:hover{border-color:var(--bronze2);background:rgba(176,138,78,.12)}
+.hero-scene{position:relative;display:grid;place-items:center}
+.hero-scene .ring{position:absolute;border:1px solid rgba(176,138,78,.22);border-radius:50%;animation:spin 46s linear infinite}
+.hero-scene .r1{width:330px;height:330px}.hero-scene .r2{width:430px;height:430px;animation-direction:reverse;animation-duration:66s;border-style:dashed}.hero-scene .r3{width:520px;height:520px;animation-duration:88s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-scene svg.main{width:min(440px,92%);position:relative;z-index:2;filter:drop-shadow(0 0 36px rgba(176,138,78,.3))}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;color:rgba(232,214,174,.7);font-size:12px;letter-spacing:3px;text-align:center}
+.scroll-hint .ln{width:1px;height:42px;background:linear-gradient(var(--bronze2),transparent);margin:8px auto 0;animation:drop 1.8s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr}.hero-scene{display:none}}
+
+.marquee{background:var(--ink2);color:var(--gold);border-top:1px solid rgba(176,138,78,.3);border-bottom:1px solid rgba(176,138,78,.3);overflow:hidden;padding:16px 0;white-space:nowrap}
+.marquee div{display:inline-block;animation:mq 32s linear infinite;font-size:14px;letter-spacing:3px}
+.marquee span{margin:0 24px;color:var(--bronze2)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ERA MAIN LINE */
+.era-sec{background:linear-gradient(180deg,#0C0905,#151009);color:#D8C9A8}
+.era-sec .sec-title{color:#F4EAD2}.era-sec .sec-sub{color:#A99A7C}
+.era-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:18px;align-items:stretch}
+.era-card{border:1px solid rgba(176,138,78,.3);border-radius:10px;overflow:hidden;background:rgba(255,255,255,.025);transition:.4s}
+.era-card:hover{transform:translateY(-6px);border-color:var(--bronze);background:rgba(176,138,78,.08)}
+.era-art{height:150px;display:grid;place-items:center;position:relative;overflow:hidden}
+.era-art.past{background:radial-gradient(120% 120% at 50% 120%,rgba(176,138,78,.35),transparent 70%)}
+.era-art.now{background:radial-gradient(120% 120% at 50% 120%,rgba(46,110,99,.4),transparent 70%)}
+.era-art.future{background:radial-gradient(120% 120% at 50% 120%,rgba(58,104,116,.42),transparent 70%)}
+.era-art svg{width:150px;height:110px;stroke:var(--gold);fill:none;stroke-width:1.4;filter:drop-shadow(0 0 10px rgba(203,168,110,.3))}
+.era-body{padding:24px 24px 28px}
+.era-body .en{font-size:12px;letter-spacing:4px;color:var(--bronze2)}
+.era-body h3{font-family:var(--serif);font-size:26px;color:var(--goldlt);margin:8px 0 10px;letter-spacing:2px}
+.era-body p{font-size:13.5px;color:#B6A888;line-height:1.85}
+.era-arrow{display:grid;place-items:center;color:var(--bronze);font-size:30px}
+@media(max-width:900px){.era-flow{grid-template-columns:1fr}.era-arrow{transform:rotate(90deg)}}
+
+/* STATS */
+.stats{background:var(--paper)}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.stat{background:var(--paper);padding:42px 28px;text-align:center}
+.stat .num{font-family:var(--serif);font-size:48px;color:var(--bronze);font-weight:700;line-height:1}
+.stat .num small{font-size:20px}
+.stat .lab{margin-top:12px;color:var(--muted);font-size:14px;letter-spacing:1px}
+@media(max-width:760px){.stat-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* WORLDS (six theme spaces) */
+.worlds{background:linear-gradient(180deg,var(--paper),var(--sand))}
+.world-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.world{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.4s;display:flex;flex-direction:column}
+.world:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(43,37,27,.45);border-color:var(--bronze)}
+.world .scene{height:190px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(130% 120% at 50% 10%,#241D10,#0E0B07)}
+.world .scene::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 120%,rgba(203,168,110,.22),transparent 60%)}
+.world .scene svg{width:78%;height:82%;position:relative;z-index:2;stroke:var(--gold);fill:none;stroke-width:1.5;filter:drop-shadow(0 0 12px rgba(203,168,110,.35))}
+.world .scene .no{position:absolute;top:14px;left:18px;z-index:3;font-family:var(--serif);font-size:13px;letter-spacing:3px;color:rgba(232,214,174,.55)}
+.world .wb{padding:24px 24px 26px}
+.world .wb h3{font-family:var(--serif);font-size:23px;color:var(--ink);letter-spacing:1px}
+.world .wb .sub{font-size:12px;letter-spacing:2px;color:var(--bronze);margin:6px 0 12px}
+.world .wb p{font-size:13.5px;color:var(--muted);line-height:1.8}
+.world .wb .hook{margin-top:14px;font-size:13px;color:var(--cinnabar);letter-spacing:1px}
+@media(max-width:980px){.world-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.world-grid{grid-template-columns:1fr}}
+
+/* ZONES */
+.zones .zone-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.zone{border:1px solid var(--line);background:#fff;border-radius:8px;overflow:hidden;transition:.4s}
+.zone:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(43,37,27,.35)}
+.zone .zh{padding:34px 34px 24px;background:linear-gradient(135deg,var(--ink2),var(--ink3));color:var(--gold)}
+.zone .zh .n{font-family:var(--serif);font-size:13px;letter-spacing:4px;color:var(--bronze2)}
+.zone .zh h3{font-family:var(--serif);font-size:27px;margin:10px 0 6px;letter-spacing:1px}
+.zone .zh p{font-size:13px;color:#B6A888}
+.zone .zb{padding:28px 34px 32px}
+.zone ul{list-style:none}
+.zone li{padding:11px 0;border-bottom:1px dashed var(--line);font-size:14.5px;display:flex;gap:12px}
+.zone li:last-child{border-bottom:none}
+.zone li::before{content:"◆";color:var(--bronze);font-size:10px;margin-top:6px}
+.zone li b{color:var(--ink)}
+@media(max-width:760px){.zones .zone-grid{grid-template-columns:1fr}}
+
+/* 五文一体 */
+.wuwen{background:linear-gradient(180deg,var(--sand),var(--paper))}
+.wu-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative}
+.wu{background:#fff;border:1px solid var(--line);border-top:3px solid var(--bronze);border-radius:8px;padding:28px 22px;transition:.35s;position:relative}
+.wu:hover{transform:translateY(-6px);box-shadow:0 22px 46px -24px rgba(43,37,27,.4)}
+.wu .wic{width:50px;height:50px;border-radius:50%;border:1.5px solid var(--bronze);display:grid;place-items:center;margin-bottom:16px;background:linear-gradient(135deg,rgba(203,168,110,.16),transparent)}
+.wu .wic svg{width:26px;height:26px;stroke:var(--bronze);fill:none;stroke-width:1.5}
+.wu h3{font-family:var(--serif);font-size:23px;color:var(--ink);letter-spacing:2px}
+.wu .en{font-size:11px;letter-spacing:3px;color:var(--bronze);margin:4px 0 12px}
+.wu p{font-size:13px;color:var(--muted);line-height:1.8}
+.wu-loop{margin-top:30px;text-align:center;font-size:14.5px;color:var(--ink);letter-spacing:1px;border:1px dashed var(--bronze);border-radius:8px;padding:18px 22px;background:rgba(203,168,110,.08)}
+.wu-loop b{color:var(--cinnabar)}
+@media(max-width:980px){.wu-flow{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.wu-flow{grid-template-columns:1fr}}
+
+/* REASONS */
+.reasons{background:var(--ink2);color:#D8C9A8}
+.reasons .sec-title{color:#F4EAD2}.reasons .sec-sub{color:#A99A7C}
+.reason-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.reason{border:1px solid rgba(176,138,78,.3);background:rgba(255,255,255,.03);border-radius:10px;padding:30px 28px;transition:.35s;display:flex;gap:20px}
+.reason:hover{border-color:var(--bronze2);transform:translateY(-4px);background:rgba(176,138,78,.08)}
+.reason .med{flex:none;width:58px;height:58px;border-radius:50%;border:1.5px solid var(--bronze);display:grid;place-items:center}
+.reason .med svg{width:30px;height:30px;stroke:var(--bronze2);fill:none;stroke-width:1.5}
+.reason h3{font-family:var(--serif);font-size:19px;color:var(--gold);margin-bottom:8px}
+.reason p{font-size:13.5px;color:#B6A888;line-height:1.8}
+@media(max-width:900px){.reason-grid{grid-template-columns:1fr}}
+
+/* SCHEDULE */
+.schedule{background:var(--sand)}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.day{background:#fff;border:1px solid var(--line);border-top:3px solid var(--bronze);padding:22px 16px;border-radius:6px;transition:.3s}
+.day:hover{background:var(--ink2);color:var(--gold);transform:translateY(-4px)}
+.day:hover .muted,.day:hover .dd{color:#C9BA98}
+.day .dd{font-family:var(--serif);font-size:22px;color:var(--ink);font-weight:700}
+.day .wk{font-size:12px;color:var(--bronze);letter-spacing:2px;margin:2px 0 12px}
+.day .muted{font-size:12.5px;color:var(--muted);line-height:1.75}
+@media(max-width:980px){.days{grid-template-columns:repeat(2,1fr)}}
+
+/* TICKETS */
+.tickets{background:linear-gradient(180deg,#120E08,#1C160D);color:#D8C9A8}
+.tickets .sec-title{color:#F1E6CC}.tickets .sec-sub{color:#A99A7C}
+.tk-hero{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:stretch}
+.tk-main{background:linear-gradient(160deg,rgba(176,138,78,.22),rgba(176,138,78,.04));border:1px solid var(--bronze2);border-radius:10px;padding:46px 42px;display:flex;flex-direction:column}
+.tk-main .name{font-size:15px;letter-spacing:3px;color:var(--gold)}
+.tk-main .price{font-family:var(--serif);font-size:76px;color:var(--bronze2);font-weight:700;line-height:1;margin:18px 0 6px}
+.tk-main .price small{font-size:17px;color:#C9BA98;font-family:var(--sans)}
+.tk-main p{font-size:14px;color:#C9BA98;margin:18px 0 26px;line-height:1.9}
+.tk-main .btn{align-self:flex-start}
+.tk-free{margin-top:22px;font-size:12.5px;color:#9C8E70;border-top:1px solid rgba(176,138,78,.25);padding-top:16px}
+.tk-inc{background:rgba(255,255,255,.03);border:1px solid rgba(176,138,78,.3);border-radius:10px;padding:40px 38px}
+.tk-inc h4{font-family:var(--serif);color:var(--gold);font-size:20px;letter-spacing:2px;margin-bottom:20px}
+.tk-inc ul{list-style:none}
+.tk-inc li{padding:11px 0;border-bottom:1px dashed rgba(176,138,78,.22);font-size:14.5px;color:#D8C9A8;display:flex;gap:12px}
+.tk-inc li::before{content:"◆";color:var(--bronze);font-size:10px;margin-top:7px}
+.tk-inc li:last-child{border-bottom:none}
+.tk-note{margin-top:26px;font-size:13px;color:#9C8E70}
+@media(max-width:860px){.tk-hero{grid-template-columns:1fr}}
+
+.crowd{background:var(--paper)}
+.chips{display:flex;flex-wrap:wrap;gap:14px}
+.chip{border:1px solid var(--bronze);color:var(--ink);padding:12px 26px;border-radius:40px;font-size:15px;letter-spacing:2px;background:#fff;transition:.3s}
+.chip:hover{background:var(--bronze);color:#fff}
+
+.sponsor .sp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sp{border:1px solid var(--line);padding:30px 28px;border-radius:8px;background:#fff;transition:.35s}
+.sp:hover{box-shadow:0 20px 44px -26px rgba(43,37,27,.4);transform:translateY(-4px)}
+.sp .lvl{font-size:12px;letter-spacing:3px;color:var(--cinnabar)}
+.sp h3{font-family:var(--serif);font-size:21px;color:var(--ink);margin:10px 0 6px;line-height:1.5}
+.sp .amt{font-family:var(--serif);font-size:30px;color:var(--bronze);font-weight:700;margin:12px 0}
+.sp .amt small{font-size:13px;color:var(--muted)}
+.sp p{font-size:13.5px;color:var(--muted);line-height:1.8}
+.sp-line{margin-top:46px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:44px;background:linear-gradient(135deg,#fff,var(--sand))}
+.sp-line h3{font-family:var(--serif);font-size:26px;color:var(--ink);margin-bottom:14px}
+.sp-line p{color:var(--muted);font-size:14.5px;margin-bottom:10px}
+@media(max-width:900px){.sponsor .sp-grid{grid-template-columns:1fr}.sp-line{grid-template-columns:1fr}}
+
+.orgs{background:var(--ink2);color:#D8C9A8}
+.orgs .sec-title{color:#F1E6CC}
+.org-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.org{border:1px solid rgba(176,138,78,.3);background:rgba(255,255,255,.03);border-radius:8px;padding:30px 28px}
+.org .ol{font-size:12px;letter-spacing:4px;color:var(--bronze2);margin-bottom:12px}
+.org .on{font-family:var(--serif);font-size:20px;color:var(--gold);letter-spacing:1px;line-height:1.7}
+@media(max-width:860px){.org-grid{grid-template-columns:1fr}}
+
+.faq{background:var(--sand)}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:6px;margin-bottom:12px;overflow:hidden}
+.faq-q{padding:20px 26px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--ink);font-size:15.5px}
+.faq-q .pm{color:var(--bronze);font-size:22px;transition:.3s}
+.faq-a{max-height:0;overflow:hidden;transition:.4s;color:var(--muted);font-size:14px}
+.faq-a div{padding:0 26px 22px}
+.faq-item.open .faq-a{max-height:280px}
+.faq-item.open .pm{transform:rotate(45deg)}
+
+.cta{background:radial-gradient(100% 130% at 50% 0%,#2A2216,var(--ink));text-align:center;color:var(--gold)}
+.cta h2{font-family:var(--serif);font-size:clamp(28px,4vw,46px);letter-spacing:3px;margin-bottom:16px;color:#F4EAD2}
+.cta p{color:#C9BA98;margin-bottom:34px}
+
+footer{background:#0A0805;color:#9C8E70;padding:64px 0 30px;font-size:13px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:40px;margin-bottom:40px}
+footer h4{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:16px}
+footer li{list-style:none;padding:5px 0;color:#A99A7C}
+.foot-bot{border-top:1px solid rgba(176,138,78,.2);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;color:#7C7059}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-in">
+    <div class="logo"><img class="logo-img" src="logo.jpg" alt="北纬三十度logo">北纬三十度文明探索之旅</div>
+    <div class="nav-links">
+      <a href="#line">文明主线</a><a href="#worlds">主题空间</a><a href="#zones">场馆分区</a><a href="#wuwen">五文内核</a><a href="#schedule">会期日程</a>
+      <a href="#tickets">购票</a><a href="#sponsor">招商合作</a><a href="#faq">常见问题</a>
+    </div>
+    <a href="#tickets" class="nav-cta">99元购票</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div id="stars"></div><div class="hero-glow"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">2026 中国国际汽车改装博览会 · 主题馆</div>
+      <div class="era-badge"><b>过去</b><span class="ar">———</span>四大古文明 <span class="ar">›</span> <b>现在</b> 非遗×改装 <span class="ar">›</span> <b>未来</b> 数字星际</div>
+      <h1>循北纬三十度<br>一日阅尽<br><em>人类文明史诗</em></h1>
+      <p class="lead">从「文明穹顶」巨型球幕下的四大古文明，到「图腾长廊」里非遗与改装的共生，再到「星骸坠落」的陨石外星人、「未来之境」的数字艺术——2026年12月，成都西博城9号馆，一场别处无法复制的文明漫游。</p>
+      <div class="hero-meta">
+        <div class="it"><span class="dot"></span><span><b>展期</b>　2026.12.11—17（日间开放）</span></div>
+        <div class="it"><span class="dot"></span><span><b>地点</b>　成都·中国西部国际博览城9号馆</span></div>
+        <div class="it"><span class="dot"></span><span><b>统一票价</b>　99元 一票通玩</span></div>
+      </div>
+      <div class="btn-row">
+        <a href="#tickets" class="btn btn-gold">立即购票 →</a>
+        <a href="#line" class="btn btn-ghost">先看文明主线</a>
+      </div>
+    </div>
+    <div class="hero-scene">
+      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+      <svg class="main" viewBox="0 0 400 400" fill="none">
+        <defs>
+          <radialGradient id="pl" cx="50%" cy="45%" r="55%">
+            <stop offset="0%" stop-color="#F6ECD2" stop-opacity=".95"/>
+            <stop offset="55%" stop-color="#CBA86E" stop-opacity=".5"/>
+            <stop offset="100%" stop-color="#B08A4E" stop-opacity=".08"/>
+          </radialGradient>
+          <linearGradient id="bm" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#E8D6AE"/><stop offset="100%" stop-color="#B08A4E"/>
+          </linearGradient>
+        </defs>
+        <!-- 巨型星球 -->
+        <circle cx="200" cy="180" r="118" fill="url(#pl)" opacity=".25"/>
+        <circle cx="200" cy="180" r="118" stroke="#CBA86E" stroke-opacity=".55"/>
+        <ellipse cx="200" cy="180" rx="118" ry="40" stroke="#CBA86E" stroke-opacity=".4"/>
+        <ellipse cx="200" cy="180" rx="40" ry="118" stroke="#CBA86E" stroke-opacity=".4"/>
+        <!-- 飞碟与光束 -->
+        <g stroke="url(#bm)" stroke-width="1.6">
+          <ellipse cx="200" cy="96" rx="46" ry="16"/>
+          <path d="M168 94 a32 20 0 0 1 64 0"/>
+          <circle cx="200" cy="86" r="9"/>
+          <path d="M176 108 L150 168 M224 108 L250 168" stroke-opacity=".55"/>
+        </g>
+        <!-- 地面与仰望的人 -->
+        <path d="M60 300 Q200 258 340 300" stroke="#CBA86E" stroke-opacity=".6"/>
+        <g stroke="#F6ECD2" stroke-width="1.8" stroke-linecap="round">
+          <circle cx="200" cy="262" r="10"/>
+          <path d="M200 272 L200 312 M200 284 L178 300 M200 284 L222 300 M200 312 L186 344 M200 312 L214 344"/>
+        </g>
+        <!-- 星点 -->
+        <path d="M96 120 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6-4 -4-1.6 4-1.6z M300 150 l1.4 3.4 3.4 1.4 -3.4 1.4 -1.4 3.4 -1.4-3.4 -3.4-1.4 3.4-1.4z M286 70 l1.2 3 3 1.2 -3 1.2 -1.2 3 -1.2-3 -3-1.2 3-1.2z" fill="#F6ECD2" stroke="none"/>
+      </svg>
+    </div>
+  </div>
+  <div class="scroll-hint">SCROLL<div class="ln"></div></div>
+</header>
+
+<div class="marquee"><div>
+  文明穹顶 · 巨型球幕 <span>◆</span> 星骸坠落 · 陨石外星人 <span>◆</span> 未来之境 · 数字艺术 <span>◆</span> 图腾长廊 · 文明改装车阵 <span>◆</span> 12座城市厅 <span>◆</span> 200余非遗科技展位 <span>◆</span> 99元一票通玩 <span>◆</span>
+  文明穹顶 · 巨型球幕 <span>◆</span> 星骸坠落 · 陨石外星人 <span>◆</span> 未来之境 · 数字艺术 <span>◆</span> 图腾长廊 · 文明改装车阵 <span>◆</span> 12座城市厅 <span>◆</span> 200余非遗科技展位 <span>◆</span> 99元一票通玩 <span>◆</span>
+</div></div>
+
+<!-- 主线 -->
+<section class="era-sec" id="line">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">THE STORYLINE</div><h2 class="sec-title">一天之内，走过人类文明的三个时空</h2><p class="sec-sub">这不是传统货架式展会，而是一条有起承转合的文明时间轴——观众带着好奇走进去，带着震撼、谈资与战利品走出来，这正是值得专程购票的理由。</p></div>
+    <div class="era-flow">
+      <div class="era-card reveal">
+        <div class="era-art past"><svg viewBox="0 0 160 120">
+          <circle cx="80" cy="34" r="16"/><path d="M80 50 L80 58 M74 54 L86 54"/>
+          <path d="M28 104 L62 58 L78 78 L96 50 L132 104 Z"/>
+          <path d="M62 58 L62 104 M96 50 L96 104 M70 74 L88 74 M70 88 L88 88"/>
+          <path d="M10 104 Q80 90 150 104"/>
+        </svg></div>
+        <div class="era-body"><div class="en">PAST · 回到过去</div><h3>四大古文明</h3><p>在「文明穹顶」巨型球幕下被古蜀、古埃及、古玛雅、古印度河文明包裹，在图腾与莲影中读懂人类从何而来。</p></div>
+      </div>
+      <div class="era-arrow reveal">›</div>
+      <div class="era-card reveal">
+        <div class="era-art now"><svg viewBox="0 0 160 120">
+          <path d="M30 84 q10 -30 50 -30 q40 0 50 30"/>
+          <circle cx="52" cy="84" r="9"/><circle cx="108" cy="84" r="9"/>
+          <path d="M44 70 L52 52 M116 70 L108 52"/>
+          <path d="M58 62 h44 v12 h-44z"/>
+          <path d="M80 40 q-8 -14 -20 -16 M80 40 q8 -14 20 -16"/>
+          <path d="M10 104 Q80 92 150 104"/>
+        </svg></div>
+        <div class="era-body"><div class="en">NOW · 身在现在</div><h3>非遗 × 汽车改装</h3><p>看蜀绣、漆艺如何被匠人做进车厢，看文明主题涂装的整车在主舞台发布，让古老文明成为可以买、可以用的生活方式。</p></div>
+      </div>
+      <div class="era-arrow reveal">›</div>
+      <div class="era-card reveal">
+        <div class="era-art future"><svg viewBox="0 0 160 120">
+          <ellipse cx="80" cy="52" rx="42" ry="14"/>
+          <path d="M52 50 a28 18 0 0 1 56 0"/><circle cx="80" cy="44" r="8"/>
+          <path d="M62 64 L48 92 M98 64 L112 92"/>
+          <path d="M40 104 h80 M52 96 h56" stroke-opacity=".6"/>
+          <path d="M24 84 h10 M126 84 h10 M24 84 v10 M126 84 v10" stroke-opacity=".6"/>
+        </svg></div>
+        <div class="era-body"><div class="en">FUTURE · 抵达未来</div><h3>数字艺术 × 星际</h3><p>走进坠毁飞碟，与陨石外星人面对面，在「未来之境」的沉浸式数字艺术空间里，提前触碰下一个百年的文明想象。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="stat-grid reveal">
+      <div class="stat"><div class="num">7<small>天</small></div><div class="lab">12.11—17 日间不打烊</div></div>
+      <div class="stat"><div class="num">6<small>大</small></div><div class="lab">沉浸主题空间</div></div>
+      <div class="stat"><div class="num">12<small>城</small></div><div class="lab">北纬30°中国城市厅</div></div>
+      <div class="stat"><div class="num">200<small>余席</small></div><div class="lab">非遗集群 ＋ 科技集群</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 六大主题空间 -->
+<section class="worlds" id="worlds">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">SIX WORLDS</div><h2 class="sec-title">六大主题世界，步步都是大片</h2><p class="sec-sub">全馆沿一条单向文明时间轴展开，每一个空间都是为你准备的沉浸式场景——可看、可玩、可拍、可买。</p></div>
+    <div class="world-grid">
+
+      <div class="world reveal">
+        <div class="scene"><span class="no">PROLOGUE</span>
+        <svg viewBox="0 0 320 160"><circle cx="232" cy="44" r="26" stroke-opacity=".7"/><path d="M232 18 a26 26 0 0 1 0 52" stroke-opacity=".4"/>
+        <g stroke-width="1.8"><circle cx="120" cy="92" r="11"/><path d="M120 103 L120 140 M120 114 L98 128 M120 114 L142 128 M120 140 L106 156 M120 140 L134 156"/></g>
+        <path d="M40 150 Q120 128 280 150" stroke-opacity=".6"/><path d="M70 50 l1.4 3.4 3.4 1.4 -3.4 1.4 -1.4 3.4 -1.4-3.4 -3.4-1.4 3.4-1.4z M180 30 l1 2.6 2.6 1 -2.6 1 -1 2.6 -1-2.6 -2.6-1 2.6-1z"/></svg></div>
+        <div class="wb"><h3>序厅 · 星语者</h3><div class="sub">仰望星空的人 · 入馆第一打卡点</div><p>一尊永远仰望星空的大型艺术装置，在浩瀚星图下开启探索，是所有人入馆的第一张大片。</p><div class="hook">› 出片指数：★★★★★</div></div>
+      </div>
+
+      <div class="world reveal">
+        <div class="scene"><span class="no">WORLD 01</span>
+        <svg viewBox="0 0 320 160"><path d="M44 140 A116 116 0 0 1 276 140" stroke-opacity=".85"/>
+        <path d="M70 140 A90 26 0 0 1 250 140" stroke-opacity=".4"/><path d="M104 140 A56 18 0 0 1 216 140" stroke-opacity=".3"/>
+        <path d="M160 24 A116 116 0 0 1 44 140" stroke-opacity=".28"/><path d="M160 24 A116 116 0 0 0 276 140" stroke-opacity=".28"/>
+        <path d="M160 118 L70 140 M160 118 L250 140 M160 118 L112 140 M160 118 L208 140" stroke-opacity=".35"/>
+        <circle cx="160" cy="116" r="13"/><ellipse cx="160" cy="113" rx="13" ry="5"/><path d="M160 140 h0"/></svg></div>
+        <div class="wb"><h3>文明穹顶</h3><div class="sub">巨型球幕沉浸剧场 · 四大古文明</div><p>仰头即被360°巨型球幕包裹，古蜀、古埃及、古玛雅、古印度河文明从头顶奔流而过，震撼到失语。</p><div class="hook">› 必看指数：★★★★★</div></div>
+      </div>
+
+      <div class="world reveal">
+        <div class="scene"><span class="no">WORLD 02</span>
+        <svg viewBox="0 0 320 160"><path d="M60 30 v110 M100 30 v110 M220 30 v110 M260 30 v110" stroke-opacity=".7"/>
+        <path d="M60 30 q20 -14 40 0 M220 30 q20 -14 40 0"/><path d="M60 58 h40 M220 58 h40 M60 86 h40 M220 86 h40" stroke-opacity=".35"/>
+        <path d="M96 120 q16 -22 34 -20 h60 q18 0 26 14" stroke-width="1.8"/><circle cx="120" cy="100" r="7"/><circle cx="212" cy="100" r="7"/><path d="M130 100 h68"/></svg></div>
+        <div class="wb"><h3>图腾长廊</h3><div class="sub">史前图腾柱阵 × 文明改装车阵</div><p>史前图腾柱列阵两侧，其间陈列文明主题涂装的路虎、大G与整车，硬派越野与古老文明正面相遇。</p><div class="hook">› 车迷指数：★★★★★</div></div>
+      </div>
+
+      <div class="world reveal">
+        <div class="scene"><span class="no">WORLD 03</span>
+        <svg viewBox="0 0 320 160"><path d="M160 138 C118 110 110 70 160 40 C210 70 202 110 160 138Z" stroke-opacity=".8"/>
+        <path d="M160 138 C132 116 128 86 160 64 C192 86 188 116 160 138Z" stroke-opacity=".45"/>
+        <path d="M160 138 L160 52" stroke-opacity=".4"/><path d="M120 96 q40 18 80 0 M104 116 q56 22 112 0" stroke-opacity=".4"/>
+        <path d="M40 140 h240" stroke-opacity=".5"/></svg></div>
+        <div class="wb"><h3>莲影生息</h3><div class="sub">巨型莲花生命之壁 · 声光电</div><p>一朵层层绽放的巨型莲花光影之壁，象征探索与重生，穿行其间如同走过一条光之甬道。</p><div class="hook">› 治愈指数：★★★★☆</div></div>
+      </div>
+
+      <div class="world reveal">
+        <div class="scene"><span class="no">WORLD 04</span>
+        <svg viewBox="0 0 320 160"><path d="M40 140 L70 116 L110 128 L150 108 L190 130 L230 112 L280 140 Z" stroke-opacity=".7"/>
+        <ellipse cx="170" cy="86" rx="60" ry="20" transform="rotate(-14 170 86)"/><path d="M128 82 a42 24 -14 0 1 84 -20" transform="rotate(-14 170 86)"/><circle cx="170" cy="74" r="11" transform="rotate(-14 170 74)"/>
+        <g transform="translate(232,108)"><circle cx="0" cy="0" r="13"/><path d="M-7 -3 q7 -8 14 0 M-5 3 q5 4 10 0"/><circle cx="-4.5" cy="-2" r="1.6" fill="#E8D6AE" stroke="none"/><circle cx="4.5" cy="-2" r="1.6" fill="#E8D6AE" stroke="none"/></g></svg></div>
+        <div class="wb"><h3>星骸坠落</h3><div class="sub">坠毁飞碟现场 · 舱内陨石外星人</div><p>一架飞碟斜坠在嶙峋怪石之间，舱门打开，陨石外星人就在眼前——全场最具话题性的科幻现场。</p><div class="hook">› 震撼指数：★★★★★</div></div>
+      </div>
+
+      <div class="world reveal">
+        <div class="scene"><span class="no">WORLD 05</span>
+        <svg viewBox="0 0 320 160"><path d="M118 140 V56 a42 42 0 0 1 84 0 V140" stroke-opacity=".85"/>
+        <path d="M118 84 h84 M118 104 h84 M118 124 h84" stroke-opacity=".3"/>
+        <path d="M134 56 V140 M186 56 V140 M160 56 V140" stroke-opacity=".25"/>
+        <path d="M70 60 l2 5 5 2 -5 2 -2 5 -2-5 -5-2 5-2z M250 50 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6-4 -4-1.6 4-1.6z M256 110 l1.2 3 3 1.2 -3 1.2 -1.2 3 -1.2-3 -3-1.2 3-1.2z"/></svg></div>
+        <div class="wb"><h3>未来之境</h3><div class="sub">沉浸式数字艺术展览空间</div><p>一整片由光影与算法构成的未来文明现场，数字艺术在身边流动，是科幻迷与拍照党的封神之地。</p><div class="hook">› 未来指数：★★★★★</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="zones" id="zones">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">ZONES</div><h2 class="sec-title">馆内左右半场，各有天地</h2><p class="sec-sub">左半场面向城市与品牌，右半场面向文化与科技百业，一条主通道串联，逛展路线清晰不回头。</p></div>
+    <div class="zone-grid">
+      <div class="zone reveal">
+        <div class="zh"><div class="n">LEFT / 左半场</div><h3>12城市厅 ＋ 品牌中心</h3><p>城市整体推介与事件型展陈</p></div>
+        <div class="zb"><ul>
+          <li><span><b>12个北纬30°城市厅</b>：一市一厅，数字主墙＋VR漫游＋AR互动桌＋招商洽谈，每日城市推介。</span></li>
+          <li><span><b>约1000㎡品牌中心</b>：特色老爷车、赛车与头部品牌叙事型集中展示。</span></li>
+          <li><span><b>城市产业对接</b>：自驾线路、房车营地、文旅文创、改装装备现场签约。</span></li>
+        </ul></div>
+      </div>
+      <div class="zone reveal">
+        <div class="zh"><div class="n">RIGHT / 右半场</div><h3>非遗 × 科技标准展区</h3><p>200余个 4m×2.5m 标准展位（10㎡/个）</p></div>
+        <div class="zb"><ul>
+          <li><span><b>非遗手作100余席</b>：国家级/省级非遗、文博文创、非遗车载改装与手作体验。</span></li>
+          <li><span><b>科技潮玩100余席</b>：人形机器人、AI陪伴、智能座舱、数字艺术与科幻潮玩。</span></li>
+          <li><span><b>展售一体</b>：可体验、可购买、可下单，线上博览会同步开店一年。</span></li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 五文一体 -->
+<section class="wuwen" id="wuwen">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">FIVE PILLARS</div><h2 class="sec-title">内容内核 · 五文一体</h2><p class="sec-sub">整场探索之旅以文明、文博、文化、文旅、文创为统一骨架，五者环环相扣，构成可看、可玩、可买、可传承的内容体系。</p></div>
+    <div class="wu-flow">
+      <div class="wu reveal"><div class="wic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div><h3>文明</h3><div class="en">探源立魂</div><p>以北纬30°四大古文明立起全场世界观与精神高度。</p></div>
+      <div class="wu reveal"><div class="wic"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5zM5 9v10M9 9v10M15 9v10M19 9v10M3 21h18M3 19h18"/></svg></div><h3>文博</h3><div class="en">数字活化</div><p>数字文物、VR/AR与巨型球幕，让馆藏文明“活起来、走出来”。</p></div>
+      <div class="wu reveal"><div class="wic"><svg viewBox="0 0 24 24"><path d="M14 4l6 6M12 6l-7 7-1 6 6-1 7-7z"/></svg></div><h3>文化</h3><div class="en">非遗国潮</div><p>蜀绣、漆艺等非遗活态展演，转化为可上车、可穿戴的国潮。</p></div>
+      <div class="wu reveal"><div class="wic"><svg viewBox="0 0 24 24"><path d="M3 19l6-9 4 5 3-4 5 8z"/><circle cx="17" cy="6" r="2"/></svg></div><h3>文旅</h3><div class="en">以线串城</div><p>12城市厅与北纬30°自驾线路，把看展流量变成城市客流。</p></div>
+      <div class="wu reveal"><div class="wic"><svg viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="12" rx="1"/><path d="M12 8v12M5 12h14M12 8c-2-4-6-3-5 0M12 8c2-4 6-3 5 0"/></svg></div><h3>文创</h3><div class="en">衍生变现</div><p>IP衍生、潮玩与数字艺术，把一次震撼变成可带走的消费。</p></div>
+    </div>
+    <div class="wu-loop reveal">以<b>文明</b>立魂 · 以<b>文博</b>承载 · 以<b>文化</b>活化 · 以<b>文旅</b>引流 · 以<b>文创</b>变现——五文一体，闭环成链。</div>
+  </div>
+</section>
+
+<!-- 为什么非来不可 -->
+<section class="reasons">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">WHY YOU</div><h2 class="sec-title">为什么这张票，非买不可</h2><p class="sec-sub">一场电影的价格，换六种在别处花钱也买不到的体验。</p></div>
+    <div class="reason-grid">
+      <div class="reason reveal"><div class="med"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="3.4"/><ellipse cx="12" cy="12" rx="3.4" ry="9"/></svg></div><div><h3>别处看不到</h3><p>巨型球幕古文明、坠毁飞碟里的陨石外星人、未来之境数字艺术，均为本展独家、不可复制。</p></div></div>
+      <div class="reason reveal"><div class="med"><svg viewBox="0 0 24 24"><path d="M3 16 q4-9 9-9 q5 0 9 9"/><circle cx="7.5" cy="13.5" r="1.6"/><circle cx="16.5" cy="13.5" r="1.6"/><path d="M5 19h14"/></svg></div><div><h3>车迷的主场</h3><p>图腾长廊文明主题改装车阵，日间多场整车发布大秀，看车、聊车、订车一次完成。</p></div></div>
+      <div class="reason reveal"><div class="med"><svg viewBox="0 0 24 24"><path d="M12 21c-4-3.5-7-6-7-9.5A3.5 3.5 0 0 1 12 9a3.5 3.5 0 0 1 7 2.5c0 3.5-3 6-7 9.5z"/></svg></div><div><h3>国风的浪漫</h3><p>蜀绣、漆艺、非遗手作可触可学可买，看古老文明如何被做成生活美学。</p></div></div>
+      <div class="reason reveal"><div class="med"><svg viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="11" rx="2"/><path d="M12 7V4M9 4h6M9 12h.01M15 12h.01M9 15h6"/></svg></div><div><h3>未来的预演</h3><p>人形机器人、智能座舱、AI黑科技集中体验，提前走进下一代生活方式。</p></div></div>
+      <div class="reason reveal"><div class="med"><svg viewBox="0 0 24 24"><path d="M4 19V9l8-5 8 5v10"/><path d="M9 19v-6h6v6"/></svg></div><div><h3>孩子的第二课堂</h3><p>古文明、匠人、机器人、数字艺术一堂打尽，寓教于乐，比课本生动一百倍。</p></div></div>
+      <div class="reason reveal"><div class="med"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></div><div><h3>步步出片社交货币</h3><p>六大主题空间天然出片，随手拍都是大片，让你成为朋友圈最会玩的人。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="schedule" id="schedule">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">SCHEDULE</div><h2 class="sec-title">会期7天，天天有主题</h2><p class="sec-sub">1场开幕启动＋1场五文主峰会＋5场五文主题分论坛（文明·文博／文旅／文化／科技／文创）＋多场整车/品牌发布，全部安排在日间。</p></div>
+    <div class="days">
+      <div class="day reveal"><div class="dd">12.11</div><div class="wk">周五</div><div class="muted">开幕启动会、12城签约、城市推介</div></div>
+      <div class="day reveal"><div class="dd">12.12</div><div class="wk">周六</div><div class="muted">主峰会·五文融合、城市对接、整车发布大秀</div></div>
+      <div class="day reveal"><div class="dd">12.13</div><div class="wk">周日</div><div class="muted">论坛A 文明·文博、品牌发布、匠人巡游</div></div>
+      <div class="day reveal"><div class="dd">12.14</div><div class="wk">周一</div><div class="muted">论坛B 文旅：自驾线路/房车营地/目的地</div></div>
+      <div class="day reveal"><div class="dd">12.15</div><div class="wk">周二</div><div class="muted">论坛C 文化＋论坛D 科技、品牌发布日</div></div>
+      <div class="day reveal"><div class="dd">12.16</div><div class="wk">周三</div><div class="muted">论坛E 文创：IP衍生与出海、总签约、成果发布</div></div>
+      <div class="day reveal"><div class="dd">12.17</div><div class="wk">周四</div><div class="muted">闭幕主旨、颁奖与成果通报、商户答谢</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="tickets" id="tickets">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">TICKETS</div><h2 class="sec-title">统一票价，99元一票通玩</h2><p class="sec-sub">不设分档、不设VIP，一张票通玩六大主题空间、全部展区与日间活动；热门空间分时预约，体验更从容。</p></div>
+    <div class="tk-hero reveal">
+      <div class="tk-main">
+        <div class="name">全场统一门票</div>
+        <div class="price">99<small> 元 / 人 · 一票通玩</small></div>
+        <p>会期任选一天到场，一次购票，六大主题空间、200余展位、12城市厅、论坛观礼与日间发布活动全部包含。官方小程序与全网渠道统一发售。</p>
+        <a href="#" class="btn btn-gold" onclick="return false">官方小程序购票 →</a>
+        <div class="tk-free">1.2m以下儿童、70岁以上老人免票（需成人陪同）；媒体与达人凭官方邀请任务入场。</div>
+      </div>
+      <div class="tk-inc">
+        <h4>99元，你将看到</h4>
+        <ul>
+          <li>「文明穹顶」巨型球幕四大古文明</li>
+          <li>「星骸坠落」坠毁飞碟与陨石外星人</li>
+          <li>「未来之境」沉浸式数字艺术群展</li>
+          <li>「图腾长廊」文明主题改装车阵</li>
+          <li>200余个非遗/科技展位，可体验可购买</li>
+          <li>日间整车发布大秀、论坛与品牌活动</li>
+        </ul>
+      </div>
+    </div>
+    <p class="tk-note">为保证体验，文明穹顶、星骸坠落等热门空间采取分时预约限流，购票后请在官方小程序选择到场日期与时段。</p>
+  </div>
+</section>
+
+<section class="crowd">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">FOR EVERYONE</div><h2 class="sec-title">一场展，接住五圈人的热爱</h2></div>
+    <div class="chips reveal">
+      <span class="chip">改装车圈</span><span class="chip">科幻迷</span><span class="chip">非遗国风</span>
+      <span class="chip">二次元/Cos</span><span class="chip">AI机器人</span><span class="chip">数字艺术</span>
+      <span class="chip">亲子研学</span><span class="chip">自驾房车</span><span class="chip">政企文旅</span>
+    </div>
+  </div>
+</section>
+
+<section class="sponsor" id="sponsor">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">PARTNERSHIP</div><h2 class="sec-title">品牌合作与招商</h2><p class="sec-sub">稀缺地标一席独有，均配专属客户经理与展后效果复盘，让品牌与高势能文明IP同行。</p></div>
+    <div class="sp-grid">
+      <div class="sp reveal"><div class="lvl">最高级别 · 仅1席</div><h3>全场总冠名</h3><div class="amt">300<small> 万元</small></div><p>活动全程冠名、全场景最高级别露出，开幕与主峰会独家冠名，覆盖视觉、广告、论坛、发布、传播与线上长效全链路权益。</p></div>
+      <div class="sp reveal"><div class="lvl">未来地标 · 仅1席</div><h3>「未来之境」数字艺术空间冠名</h3><div class="amt">120<small> 万元</small></div><p>沉浸式数字艺术展览空间独家署名，未来感强、出片率高，可联合打造数字艺术联展与品牌发布。</p></div>
+      <div class="sp reveal"><div class="lvl">沉浸地标 · 仅1席</div><h3>「文明穹顶」球幕剧场冠名</h3><div class="amt">80<small> 万元</small></div><p>巨型球幕与四大古文明影片独家冠名，观众必经、必抬头、必拍照的核心沉浸场景。</p></div>
+    </div>
+    <div class="sp-line reveal">
+      <div>
+        <h3>城市战略合作 · 普通100万元/席（11席）＋ VIP战略城市300万元/席（每年仅1席）</h3>
+        <p>一市一厅做城市整体推介；普通城市合作伙伴含展后邀请制巡展、官方自驾线路导流、央媒曝光、产业对接、论坛话语权与线上城市馆一年；VIP战略合作伙伴城市另获赛事冠名、文旅与产业集群落地专班、主峰会联合主办与全周期城市品牌片。</p>
+        <p>另设主舞台/主峰会冠名、三大主题装置冠名、分论坛主题日、指定产品、日间品牌发布时段等多档合作，以及200余个非遗/科技标准展位，权益可定制。</p>
+      </div>
+      <div>
+        <a href="#" class="btn btn-gold" style="width:100%;justify-content:center" onclick="return false">索取招商手册</a>
+        <p style="margin-top:16px;font-size:13.5px;color:var(--muted)">招商合作：组委会招商组<br>邮箱：partner@bw30.example<br>工作日 09:30—18:30</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="orgs" id="orgs">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">ORGANIZERS</div><h2 class="sec-title">主办机构</h2></div>
+    <div class="org-grid reveal">
+      <div class="org"><div class="ol">主办方 HOST</div><div class="on">通用国际展览有限公司</div></div>
+      <div class="org"><div class="ol">协办方 CO-ORGANIZER</div><div class="on">星际蔚莱（北京）数智科技有限公司</div></div>
+      <div class="org"><div class="ol">支持单位 SUPPORT</div><div class="on">北京四川企业商会、路虎中国联盟 等</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="bar"></div><div class="kicker">FAQ</div><h2 class="sec-title">参观常见问题</h2></div>
+    <div class="reveal">
+      <div class="faq-item"><div class="faq-q">99元门票包含哪些内容？<span class="pm">+</span></div><div class="faq-a"><div>99元为全场统一票价、一票通玩，包含六大主题空间、馆内全部展区、论坛观礼与日间活动，不另设VIP或分档票价，也不设夜间场次。</div></div></div>
+      <div class="faq-item"><div class="faq-q">文明穹顶和热门空间需要预约吗？<span class="pm">+</span></div><div class="faq-a"><div>为保证体验，文明穹顶、星骸坠落、未来之境等热门空间采取分时预约限流，购票后请在官方小程序选择到场日期与时段，周末场次最紧张，建议尽早预约。</div></div></div>
+      <div class="faq-item"><div class="faq-q">带孩子适合什么时候来？<span class="pm">+</span></div><div class="faq-a"><div>亲子家庭推荐上午到场，人少体验好；全场统一99元/人，1.2m以下儿童免票（需成人陪同），馆内设有母婴室与医疗点，球幕、非遗与数字艺术均适合研学。</div></div></div>
+      <div class="faq-item"><div class="faq-q">有夜间场次吗？交通如何安排？<span class="pm">+</span></div><div class="faq-a"><div>本届为日间展，不设夜间活动，闭馆时间以现场公告为准。地点为成都·中国西部国际博览城9号馆，建议地铁/公共交通出行，凭购票二维码或身份证在序厅检票，沿单向文明时间轴参观。</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap reveal">
+    <h2>12月，成都，沿北纬30°出发</h2>
+    <p>统一票价99元，一票通玩；一天之内，走过人类文明的过去、现在与未来。</p>
+    <div class="btn-row" style="justify-content:center">
+      <a href="#tickets" class="btn btn-gold">立即购票</a>
+      <a href="#sponsor" class="btn btn-ghost">品牌/城市合作</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:16px"><img class="logo-img" src="logo.jpg" alt="北纬三十度logo">北纬三十度文明探索之旅</div>
+        <p style="color:#A99A7C;max-width:380px;line-height:1.9">依托2026中国国际汽车改装博览会，打造「地理文明IP＋汽车改装产业＋数字文博科技」沉浸式主题交易展。</p>
+      </div>
+      <div><h4>快速导航</h4><ul>
+        <li><a href="#line">文明主线</a></li><li><a href="#worlds">主题空间</a></li><li><a href="#zones">场馆分区</a></li>
+        <li><a href="#schedule">会期日程</a></li><li><a href="#tickets">购票</a></li><li><a href="#sponsor">招商合作</a></li>
+      </ul></div>
+      <div><h4>组织与联系</h4><ul>
+        <li>展期：2026.12.11—17（日间开放）</li>
+        <li>地点：成都·中国西部国际博览城9号馆</li>
+        <li>主办方：通用国际展览有限公司</li>
+        <li>协办方：星际蔚莱（北京）数智科技有限公司</li>
+        <li>支持单位：北京四川企业商会、路虎中国联盟 等</li>
+        <li>招商邮箱：partner@bw30.example</li>
+      </ul></div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 通用国际展览有限公司 · 北纬三十度文明探索之旅组委会 · 保留所有权利</span>
+      <span>本站内容为活动展示，票务与合作最终以正式公告/合同为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('solid',scrollY>40)});
+const stars=document.getElementById('stars');
+for(let i=0;i<150;i++){const s=document.createElement('i');
+ const sz=Math.random()*2.2+.4;
+ s.style.cssText=`position:absolute;left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;border-radius:50%;background:#E8D6AE;opacity:${Math.random()*.7+.2};box-shadow:0 0 ${sz*3}px #CBA86E;animation:tw ${2+Math.random()*4}s ease-in-out ${Math.random()*3}s infinite alternate`;
+ stars.appendChild(s);}
+const st=document.createElement('style');st.textContent='@keyframes tw{from{opacity:.15}to{opacity:.95}}';document.head.appendChild(st);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-item').forEach(it=>it.querySelector('.faq-q').onclick=()=>it.classList.toggle('open'));
+</script>
+</body>
+</html>
